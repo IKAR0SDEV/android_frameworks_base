@@ -5903,6 +5903,15 @@ public final class Settings {
         public static final String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
 
         /**
+         * Accent Color
+         * @hide
+         */
+        public static final String ACCENT_COLOR = "accent_color";
+
+        /** @hide */
+        private static final Validator ACCENT_COLOR_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -6032,6 +6041,14 @@ public final class Settings {
             DOZE_BRIGHTNESS,
             FLASHLIGHT_ON_CALL,
             GESTURE_PILL_TOGGLE,
+            STATUS_BAR_CUSTOM_HEADER_HEIGHT,
+            LOCKSCREEN_CLOCK,
+            LOCKSCREEN_INFO,
+            QS_PANEL_BG_COLOR,
+            QS_PANEL_BG_COLOR_WALL,
+            QS_PANEL_BG_USE_WALL,
+            QS_PANEL_BG_USE_FW,
+            ACCENT_COLOR,
         };
 
         /**
@@ -6233,6 +6250,14 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DOZE_BRIGHTNESS);
             PRIVATE_SETTINGS.add(FLASHLIGHT_ON_CALL);
             PRIVATE_SETTINGS.add(GESTURE_PILL_TOGGLE);
+            PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_HEIGHT);
+            PRIVATE_SETTINGS.add(LOCKSCREEN_CLOCK);
+            PRIVATE_SETTINGS.add(LOCKSCREEN_INFO);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR_WALL);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_WALL);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_FW);
+            PRIVATE_SETTINGS.add(ACCENT_COLOR);
         }
 
         /**
@@ -6408,6 +6433,14 @@ public final class Settings {
             VALIDATORS.put(DOZE_BRIGHTNESS, DOZE_BRIGHTNESS_VALIDATOR);
             VALIDATORS.put(FLASHLIGHT_ON_CALL, FLASHLIGHT_ON_CALL_VALIDATOR);
             VALIDATORS.put(GESTURE_PILL_TOGGLE, GESTURE_PILL_TOGGLE_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER_HEIGHT, STATUS_BAR_CUSTOM_HEADER_HEIGHT_VALIDATOR);
+            VALIDATORS.put(LOCKSCREEN_CLOCK, LOCKSCREEN_CLOCK_VALIDATOR);
+            VALIDATORS.put(LOCKSCREEN_INFO, LOCKSCREEN_INFO_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_COLOR, QS_PANEL_BG_COLOR_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_COLOR_WALL, QS_PANEL_BG_COLOR_WALL_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_USE_WALL, QS_PANEL_BG_USE_WALL_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_USE_FW, QS_PANEL_BG_USE_FW_VALIDATOR);
+            VALIDATORS.put(ACCENT_COLOR, ACCENT_COLOR_VALIDATOR);
         }
 
         /**
