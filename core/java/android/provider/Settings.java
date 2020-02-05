@@ -5903,15 +5903,6 @@ public final class Settings {
         public static final String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
 
         /**
-         * Accent Color
-         * @hide
-         */
-        public static final String ACCENT_COLOR = "accent_color";
-
-        /** @hide */
-        private static final Validator ACCENT_COLOR_VALIDATOR = ANY_INTEGER_VALIDATOR;
-
-        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -6041,17 +6032,6 @@ public final class Settings {
             DOZE_BRIGHTNESS,
             FLASHLIGHT_ON_CALL,
             GESTURE_PILL_TOGGLE,
-            QS_PANEL_BG_COLOR,
-            QS_PANEL_BG_COLOR_WALL,
-            QS_PANEL_BG_USE_WALL,
-            QS_PANEL_BG_USE_FW,
-            VOLTE_ICON,
-            VOLTE_ICON_STYLE,
-            DATA_DISABLED_ICON,
-            STATUS_BAR_SHOW_TICKER,
-            STATUS_BAR_TICKER_ANIMATION_MODE,
-            STATUS_BAR_TICKER_TICK_DURATION,
-            ACCENT_COLOR,
         };
 
         /**
@@ -6253,19 +6233,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DOZE_BRIGHTNESS);
             PRIVATE_SETTINGS.add(FLASHLIGHT_ON_CALL);
             PRIVATE_SETTINGS.add(GESTURE_PILL_TOGGLE);
-<<<<<<< HEAD
-=======
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR_WALL);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_WALL);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_FW);
-            PRIVATE_SETTINGS.add(DATA_DISABLED_ICON);
-            PRIVATE_SETTINGS.add(STATUS_BAR_SHOW_TICKER);
-            PRIVATE_SETTINGS.add(STATUS_BAR_TICKER_ANIMATION_MODE);
-            PRIVATE_SETTINGS.add(STATUS_BAR_TICKER_TICK_DURATION);
-            PRIVATE_SETTINGS.add(FORCE_SHOW_NAVBAR);
-            PRIVATE_SETTINGS.add(ACCENT_COLOR);
->>>>>>> ff58bf40651... base: RGB Accent Picker [1/2]
         }
 
         /**
@@ -6441,17 +6408,6 @@ public final class Settings {
             VALIDATORS.put(DOZE_BRIGHTNESS, DOZE_BRIGHTNESS_VALIDATOR);
             VALIDATORS.put(FLASHLIGHT_ON_CALL, FLASHLIGHT_ON_CALL_VALIDATOR);
             VALIDATORS.put(GESTURE_PILL_TOGGLE, GESTURE_PILL_TOGGLE_VALIDATOR);
-            VALIDATORS.put(QS_PANEL_BG_COLOR, QS_PANEL_BG_COLOR_VALIDATOR);
-            VALIDATORS.put(QS_PANEL_BG_COLOR_WALL, QS_PANEL_BG_COLOR_WALL_VALIDATOR);
-            VALIDATORS.put(QS_PANEL_BG_USE_WALL, QS_PANEL_BG_USE_WALL_VALIDATOR);
-            VALIDATORS.put(QS_PANEL_BG_USE_FW, QS_PANEL_BG_USE_FW_VALIDATOR);
-            VALIDATORS.put(DATA_DISABLED_ICON, DATA_DISABLED_ICON_VALIDATOR);
-            VALIDATORS.put(STATUS_BAR_SHOW_TICKER, STATUS_BAR_SHOW_TICKER_VALIDATOR);
-            VALIDATORS.put(STATUS_BAR_TICKER_ANIMATION_MODE,
-                    STATUS_BAR_TICKER_ANIMATION_MODE_VALIDATOR);
-            VALIDATORS.put(STATUS_BAR_TICKER_TICK_DURATION,
-                    STATUS_BAR_TICKER_TICK_DURATION_VALIDATOR);
-            VALIDATORS.put(ACCENT_COLOR, ACCENT_COLOR_VALIDATOR);
         }
 
         /**
