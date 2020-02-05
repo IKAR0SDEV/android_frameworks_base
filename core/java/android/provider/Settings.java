@@ -6253,6 +6253,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DOZE_BRIGHTNESS);
             PRIVATE_SETTINGS.add(FLASHLIGHT_ON_CALL);
             PRIVATE_SETTINGS.add(GESTURE_PILL_TOGGLE);
+<<<<<<< HEAD
+=======
             PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR);
             PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR_WALL);
             PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_WALL);
@@ -6263,6 +6265,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUS_BAR_TICKER_TICK_DURATION);
             PRIVATE_SETTINGS.add(FORCE_SHOW_NAVBAR);
             PRIVATE_SETTINGS.add(ACCENT_COLOR);
+>>>>>>> ff58bf40651... base: RGB Accent Picker [1/2]
         }
 
         /**
